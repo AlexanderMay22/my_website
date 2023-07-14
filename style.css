@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(253, 194, 29);
+    height: 100hv;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 20px;
+    width: 100%;   
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(0, 0, 155);
+}
+
+.navbar-left {
+    order: 1;
+    padding-right: 200px;
+  }
+  
+.navbar-right {
+    order: 3;
+    padding-left: 200px;
+  }
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(253, 194, 29);
+}
+
+.navbar-right a {
+    margin-right: 30px;
+  }
+
+.navbar a:hover {
+    color: white;
+}
+
+.image-cycle {
+    position: relative;
+    width: 525px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    overflow: hidden;
+    margin-top: 50px;
+}
+    
+.image-cycle img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeInOut 18s infinite;
+}
+    
+.image-cycle img:nth-child(1) {
+    animation-delay: 0s;
+}
+    
+.image-cycle img:nth-child(2) {
+    animation-delay: 6s;
+}
+    
+.image-cycle img:nth-child(3) {
+    animation-delay: 12s;
+}
+    
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#homepage_p1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+    color: rgb(0, 0, 155);
+}
+
+#homepage_p2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 155);
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding: 20px;
+    width: 100%;   
+    font-size: 30px;
+    font-style: italic;
+    background-color: rgb(0, 0, 155);
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(253, 194, 29);
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.socials a:hover {
+    color: white;
+}
+
+.greece_img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.greece_img img {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#greece_p1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 155);
+}
+
+#greece_p2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 155);
+    margin-bottom: 50px;
+}
+
+.japan_img {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.japan_img img {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+#japan_p1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: rgb(0, 0, 155);
+}
+
+#japan_p2 {
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 155);
+    margin-bottom: 50px;
+}
